@@ -8,6 +8,7 @@ function App() {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isChecking, setIsChecking] = useState(false);
   const [currentTopic, setCurrentTopic] = useState(null);
+  const [currentLevel, setCurrentLevel] = useState(1);
 
   const topics = [
     { id: 1, name: 'בירות עולם', icon: '🏛️' },
@@ -17,59 +18,112 @@ function App() {
   ];
   
   const quizData = {
-    capitals: [
-      {
-        question: "מה היא בירת צרפת?",
-        options: ["לונדון", "מדריד", "פריז", "רומא"],
-        correctAnswer: "פריז"
-      },
-      {
-        question: "מה היא בירת יפן?",
-        options: ["סיאול", "בייג'ינג", "בנגקוק", "טוקיו"],
-        correctAnswer: "טוקיו"
-      },
-      {
-        question: "מה היא בירת ברזיל?",
-        options: ["ברזיליה", "ריו דה ז'נרו", "סאו פאולו", "בואנוס איירס"],
-        correctAnswer: "ברזיליה"
-      },
-      {
-        question: "מה היא בירת אוסטרליה?",
-        options: ["סידני", "מלבורן", "קנברה", "בריסביין"],
-        correctAnswer: "קנברה"
-      },
-      {
-        question: "מה היא בירת מצרים?",
-        options: ["קהיר", "אלכסנדריה", "דובאי", "אמן"],
-        correctAnswer: "קהיר"
-      },
-      {
-        question: "מה היא בירת קנדה?",
-        options: ["טורונטו", "מונטריאול", "ונקובר", "אוטווה"],
-        correctAnswer: "אוטווה"
-      },
-      {
-        question: "מה היא בירת ספרד?",
-        options: ["ברצלונה", "מדריד", "ולנסיה", "סביליה"],
-        correctAnswer: "מדריד"
-      },
-      {
-        question: "מה היא בירת הודו?",
-        options: ["מומבאי", "ניו דלהי", "בנגלור", "כלכותה"],
-        correctAnswer: "ניו דלהי"
-      },
-      {
-        question: "מה היא בירת ארגנטינה?",
-        options: ["בואנוס איירס", "סנטיאגו", "לימה", "מונטווידאו"],
-        correctAnswer: "בואנוס איירס"
-      },
-      {
-        question: "מה היא בירת דרום אפריקה?",
-        options: ["קייפטאון", "יוהנסבורג", "פרטוריה", "דרבן"],
-        correctAnswer: "פרטוריה"
-      }
-    ],
-    
+    capitals: {
+      1: [
+        {
+          question: "מה היא בירת צרפת?",
+          options: ["לונדון", "מדריד", "פריז", "רומא"],
+          correctAnswer: "פריז"
+        },
+        {
+          question: "מה היא בירת יפן?",
+          options: ["סיאול", "בייג'ינג", "בנגקוק", "טוקיו"],
+          correctAnswer: "טוקיו"
+        },
+        {
+          question: "מה היא בירת ברזיל?",
+          options: ["ברזיליה", "ריו דה ז'נרו", "סאו פאולו", "בואנוס איירס"],
+          correctAnswer: "ברזיליה"
+        },
+        {
+          question: "מה היא בירת אוסטרליה?",
+          options: ["סידני", "מלבורן", "קנברה", "בריסביין"],
+          correctAnswer: "קנברה"
+        },
+        {
+          question: "מה היא בירת מצרים?",
+          options: ["קהיר", "אלכסנדריה", "דובאי", "אמן"],
+          correctAnswer: "קהיר"
+        },
+        {
+          question: "מה היא בירת קנדה?",
+          options: ["טורונטו", "מונטריאול", "ונקובר", "אוטווה"],
+          correctAnswer: "אוטווה"
+        },
+        {
+          question: "מה היא בירת ספרד?",
+          options: ["ברצלונה", "מדריד", "ולנסיה", "סביליה"],
+          correctAnswer: "מדריד"
+        },
+        {
+          question: "מה היא בירת הודו?",
+          options: ["מומבאי", "ניו דלהי", "בנגלור", "כלכותה"],
+          correctAnswer: "ניו דלהי"
+        },
+        {
+          question: "מה היא בירת ארגנטינה?",
+          options: ["בואנוס איירס", "סנטיאגו", "לימה", "מונטווידאו"],
+          correctAnswer: "בואנוס איירס"
+        },
+        {
+          question: "מה היא בירת דרום אפריקה?",
+          options: ["קייפטאון", "יוהנסבורג", "פרטוריה", "דרבן"],
+          correctAnswer: "פרטוריה"
+        }
+      ],
+      2: [
+        {
+          question: "מה היא בירת פורטוגל?",
+          options: ["ליסבון", "פורטו", "מדריד", "ברצלונה"],
+          correctAnswer: "ליסבון"
+        },
+        {
+          question: "מה היא בירת פולין?",
+          options: ["ורשה", "קרקוב", "פראג", "בודפשט"],
+          correctAnswer: "ורשה"
+        },
+        {
+          question: "מה היא בירת אירלנד?",
+          options: ["דבלין", "בלפסט", "קורק", "גלזגו"],
+          correctAnswer: "דבלין"
+        },
+        {
+          question: "מה היא בירת מרוקו?",
+          options: ["רבאט", "קזבלנקה", "מרקש", "פס"],
+          correctAnswer: "רבאט"
+        },
+        {
+          question: "מה היא בירת ניו זילנד?",
+          options: ["וולינגטון", "אוקלנד", "קרייסטצ'רץ'", "המילטון"],
+          correctAnswer: "וולינגטון"
+        },
+        {
+          question: "מה היא בירת וייטנאם?",
+          options: ["האנוי", "הו צ'י מין", "דה נאנג", "הואה"],
+          correctAnswer: "האנוי"
+        },
+        {
+          question: "מה היא בירת פרו?",
+          options: ["לימה", "קוסקו", "ארקיפה", "טרוחיו"],
+          correctAnswer: "לימה"
+        },
+        {
+          question: "מה היא בירת אוקראינה?",
+          options: ["קייב", "חרקוב", "לבוב", "אודסה"],
+          correctAnswer: "קייב"
+        },
+        {
+          question: "מה היא בירת דנמרק?",
+          options: ["קופנהגן", "אורהוס", "אודנסה", "אולבורג"],
+          correctAnswer: "קופנהגן"
+        },
+        {
+          question: "מה היא בירת סינגפור?",
+          options: ["סינגפור", "ג'והור בארו", "קואלה לומפור", "פנאנג"],
+          correctAnswer: "סינגפור"
+        }
+      ]
+    },
     flags: [
       {
         question: "לאיזו מדינה שייך הדגל הזה? 🇯🇵",
@@ -83,7 +137,7 @@ function App() {
       },
       {
         question: "לאיזו מדינה שייך הדגל הזה? 🇧🇷",
-        options: ["ארגנטינה", "ברזיל", "קולומביה", "צ'ילה"],
+        options: ["ארצנטינה", "ברזיל", "קולומביה", "צ'ילה"],
         correctAnswer: "ברזיל"
       },
       {
@@ -242,8 +296,48 @@ function App() {
     setScore(0);
   };
 
+  const handleLevelComplete = () => {
+    return (
+      <div className="quiz-container">
+        <h2>כל הכבוד! סיימת את רמה {currentLevel}</h2>
+        <p>הציון שלך: {score} מתוך {getCurrentQuestions().length}</p>
+        <div className="level-complete-buttons">
+          {currentLevel === 1 && (
+            <button 
+              className="next-level-button"
+              onClick={() => {
+                setCurrentLevel(2);
+                setCurrentQuestion(0);
+                setScore(0);
+                setSelectedAnswer(null);
+                setIsChecking(false);
+                setGameState('quiz');
+              }}
+            >
+              המשך לרמה 2
+            </button>
+          )}
+          <button 
+            className="topics-button"
+            onClick={() => {
+              setGameState('topics');
+              setCurrentLevel(1);
+              setCurrentQuestion(0);
+              setScore(0);
+              setSelectedAnswer(null);
+              setIsChecking(false);
+            }}
+          >
+            חזור לבחירת נושא
+          </button>
+        </div>
+      </div>
+    );
+  };
+
   const getCurrentQuestions = () => {
-    return quizData[currentTopic] || [];
+    if (!currentTopic) return [];
+    return quizData[currentTopic][currentLevel] || [];
   };
 
   const handleAnswerClick = (selected) => {
@@ -262,11 +356,11 @@ function App() {
       setTimeout(() => {
         if (currentQuestion < getCurrentQuestions().length - 1) {
           setCurrentQuestion(currentQuestion + 1);
+          setSelectedAnswer(null);
+          setIsChecking(false);
         } else {
           setGameState('finished');
         }
-        setSelectedAnswer(null);
-        setIsChecking(false);
       }, 1000);
     }, 500);
   };
@@ -309,8 +403,11 @@ function App() {
         const questions = getCurrentQuestions();
         return (
           <div className="quiz-container">
-            <div className="question-counter">שאלה {currentQuestion + 1} מתוך {questions.length}</div>
-            <div className="score">ניקוד: {score}</div>
+            <div className="quiz-header">
+              <div className="level-indicator">רמה {currentLevel}</div>
+              <div className="question-counter">שאלה {currentQuestion + 1} מתוך {questions.length}</div>
+              <div className="score">ניקוד: {score}</div>
+            </div>
             <h2>{questions[currentQuestion].question}</h2>
             <div className="options-grid">
               {questions[currentQuestion].options.map((option, index) => (
@@ -334,18 +431,7 @@ function App() {
         );
 
       case 'finished':
-        return (
-          <div className="quiz-container">
-            <h2>סיימת את השאלון!</h2>
-            <p>הציון שלך: {score} מתוך {getCurrentQuestions().length}</p>
-            <button 
-              className="start-button"
-              onClick={() => setGameState('topics')}
-            >
-              חזור לבחירת נושא
-            </button>
-          </div>
-        );
+        return handleLevelComplete();
     }
   };
 
