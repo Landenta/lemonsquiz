@@ -89,7 +89,7 @@ function App() {
         },
         {
           question: "מהי עיר הבירה של דנמרק?",
-          options: ["סטוקהולם", "קופנהגן", "אוסלו", "הלסי��קי"],
+          options: ["סטוקהולם", "קופנהגן", "אוסלו", "הלסינקי"],
           correctAnswer: "קופנהגן"
         },
         {
@@ -119,7 +119,7 @@ function App() {
         },
         {
           question: "מהי עיר הבירה של נורבגיה?",
-          options: ["קופנהגן", "סטוקהולם", "אוסלו", "הלסינקי"],
+          options: ["קופנהגן", "סטוקהו��ם", "אוסלו", "הלסינקי"],
           correctAnswer: "אוסלו"
         }
       ]
@@ -152,7 +152,7 @@ function App() {
           correctAnswer: "קנדה"
         },
         {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇿🇦",
+          question: "לאיזו מדינ�� שייך הדגל הזה? 🇿🇦",
           options: ["קניה", "ניגריה", "דרום אפריקה", "אתיופיה"],
           correctAnswer: "דרום אפריקה"
         },
@@ -179,54 +179,54 @@ function App() {
       ],
       2: [
         {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇯🇵",
-          options: ["סין", "יפן", "וייטנאם", "קוריאה"],
-          correctAnswer: "יפן"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇮🇹",
-          options: ["ספרד", "צרפת", "איטליה", "יוון"],
-          correctAnswer: "איטליה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇧🇷",
-          options: ["ארצנטינה", "ברזיל", "קולומביה", "צ'ילה"],
-          correctAnswer: "ברזיל"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇬🇧",
-          options: ["בריטניה", "אוסטרליה", "ניו זילנד", "קנדה"],
-          correctAnswer: "בריטניה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇨🇦",
-          options: ["קנדה", "ארה״ב", "מקסיקו", "אלסקה"],
-          correctAnswer: "קנדה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇿🇦",
-          options: ["קניה", "ניגריה", "דרום אפריקה", "אתיופיה"],
-          correctAnswer: "דרום אפריקה"
-        },
-        {
-          question: "��איזו מדינה שייך הדגל הזה? 🇸🇪",
-          options: ["נורבגיה", "פינלנד", "דנמרק", "שבדיה"],
-          correctAnswer: "שבדיה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇦🇺",
-          options: ["ניו זילנד", "אוסטרליה", "פיג'י", "פפואה גינאה החדשה"],
-          correctAnswer: "אוסטרליה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇩🇪",
-          options: ["בלגיה", "גרמניה", "הולנד", "לוקסמבורג"],
-          correctAnswer: "גרמניה"
+          question: "לאיזו מדינה שייך הדגל הזה? 🇳🇱",
+          options: ["לוקסמבורג", "הולנד", "קרואטיה", "סלובניה"],
+          correctAnswer: "הולנד"
         },
         {
           question: "לאיזו מדינה שייך הדגל הזה? 🇰🇷",
-          options: ["צפון קוריאה", "דרום קוריאה", "יפן", "טייוואן"],
+          options: ["יפן", "דרום קוריאה", "טייוואן", "וייטנאם"],
           correctAnswer: "דרום קוריאה"
+        },
+        {
+          question: "לאיזו מדינה שייך הדגל הזה? 🇲🇽",
+          options: ["ברזיל", "ארגנטינה", "מקסיקו", "קולומביה"],
+          correctAnswer: "מקסיקו"
+        },
+        {
+          question: "לאיזו מדינה שייך הדגל הזה? 🇦🇺",
+          options: ["ניו זילנד", "אוסטרליה", "פיג'י", "טונגה"],
+          correctAnswer: "אוסטרליה"
+        },
+        {
+          question: "לאיזו מדינה שייך הדגל הזה? 🇪🇬",
+          options: ["סודן", "מצרים", "עיראק", "סוריה"],
+          correctAnswer: "מצרים"
+        },
+        {
+          question: "לאיזו מדינה שייך הדגל הזה? 🇵🇹",
+          options: ["ספרד", "פורטוגל", "יוון", "מלטה"],
+          correctAnswer: "פורטוגל"
+        },
+        {
+          question: "לאיזו מדינה שייך הדגל הזה? 🇨🇭",
+          options: ["אוסטריה", "דנמרק", "שוויץ", "פולין"],
+          correctAnswer: "שוויץ"
+        },
+        {
+          question: "לאיזו מדינה שייך הדגל הזה? 🇸🇬",
+          options: ["תאילנד", "סינגפור", "מלזיה", "אינדונזיה"],
+          correctAnswer: "סינגפור"
+        },
+        {
+          question: "לאיזו מדינה שייך הדגל הזה? 🇦🇷",
+          options: ["צ'ילה", "אורוגוואי", "ארגנטינה", "פרגוואי"],
+          correctAnswer: "ארגנטינה"
+        },
+        {
+          question: "לאיזו מדינה שייך הדגל הזה? 🇹🇷",
+          options: ["מרוקו", "טורקיה", "טוניסיה", "אלג'יריה"],
+          correctAnswer: "טורקיה"
         }
       ]
     },
@@ -260,7 +260,7 @@ function App() {
         {
           question: "איזה מאכל מזוהה עם הודו?",
           options: ["סושי", "פיצה", "קארי", "המבורגר"],
-          correctAnswer: "קארי"
+          correctAnswer: "ק��רי"
         },
         {
           question: "איזה מאכל מזוהה עם גרמניה?",
@@ -359,7 +359,7 @@ function App() {
           correctAnswer: "אירו"
         },
         {
-          question: "מהו המטבע של סין?",
+          question: "מהו המטב�� של סין?",
           options: ["ין", "וון", "יואן", "רופי"],
           correctAnswer: "יואן"
         },
@@ -426,7 +426,7 @@ function App() {
           correctAnswer: "ראנד"
         },
         {
-          question: "מהו המטבע של נורבגיה?",
+          question: "מהו המטבע של נו��בגיה?",
           options: ["אירו", "קרונה", "כתר נורבגי", "כתר שבדי"],
           correctAnswer: "כתר נורבגי"
         },
@@ -436,7 +436,7 @@ function App() {
           correctAnswer: "רופיה"
         },
         {
-          question: "מה�� המטבע של ערב הסעודית?",
+          question: "מהו המטבע של ערב הסעודית?",
           options: ["דינר", "דירהם", "ריאל סעודי", "לירה"],
           correctAnswer: "ריאל סעודי"
         }
