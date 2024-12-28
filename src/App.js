@@ -73,54 +73,54 @@ function App() {
       ],
       2: [
         {
-          question: "מה היא בירת פורטוגל?",
-          options: ["ליסבון", "פורטו", "מדריד", "ברצלונה"],
-          correctAnswer: "ליסבון"
+          question: "מהי עיר הבירה של פינלנד?",
+          options: ["אוסלו", "הלסינקי", "סטוקהולם", "קופנהגן"],
+          correctAnswer: "הלסינקי"
         },
         {
-          question: "מה היא בירת פולין?",
-          options: ["ורשה", "קרקוב", "פראג", "בודפשט"],
-          correctAnswer: "ורשה"
-        },
-        {
-          question: "מה היא בירת אירלנד?",
-          options: ["דבלין", "בלפסט", "קורק", "גלזגו"],
+          question: "מהי עיר הבירה של אירלנד?",
+          options: ["אדינבורו", "קרדיף", "דבלין", "בלפסט"],
           correctAnswer: "דבלין"
         },
         {
-          question: "מה היא בירת מרוקו?",
-          options: ["רבאט", "קזבלנקה", "מרקש", "פס"],
-          correctAnswer: "רבאט"
+          question: "מהי עיר הבירה של הונגריה?",
+          options: ["זאגרב", "פראג", "וינה", "בודפשט"],
+          correctAnswer: "בודפשט"
         },
         {
-          question: "מה היא בירת ניו זילנד?",
-          options: ["וולינגטון", "אוקלנד", "קרייסטצ'רץ'", "המילטון"],
-          correctAnswer: "וולינגטון"
-        },
-        {
-          question: "מה היא בירת וייטנאם?",
-          options: ["האנוי", "הו צ'י מין", "דה נאנג", "הואה"],
-          correctAnswer: "האנוי"
-        },
-        {
-          question: "מה היא בירת פרו?",
-          options: ["לימה", "קוסקו", "ארקיפה", "טרוחיו"],
-          correctAnswer: "לימה"
-        },
-        {
-          question: "מה היא בירת אוקראינה?",
-          options: ["קייב", "חרקוב", "לבוב", "אודסה"],
-          correctAnswer: "קייב"
-        },
-        {
-          question: "מה היא בירת דנמרק?",
-          options: ["קופנהגן", "אורהוס", "אודנסה", "אולבורג"],
+          question: "מהי עיר הבירה של דנמרק?",
+          options: ["סטוקהולם", "קופנהגן", "אוסלו", "הלסינקי"],
           correctAnswer: "קופנהגן"
         },
         {
-          question: "מה היא בירת סינגפור?",
-          options: ["סינגפור", "ג'והור בארו", "קואלה לומפור", "פנאנג"],
-          correctAnswer: "סינגפור"
+          question: "מהי עיר הבירה של פורטוגל?",
+          options: ["מדריד", "ברצלונה", "ליסבון", "פורטו"],
+          correctAnswer: "ליסבון"
+        },
+        {
+          question: "מהי עיר הבירה של פולין?",
+          options: ["בוקרשט", "ורשה", "בודפשט", "פראג"],
+          correctAnswer: "ורשה"
+        },
+        {
+          question: "מהי עיר הבירה של יוון?",
+          options: ["סלוניקי", "איסטנבול", "אתונה", "רומא"],
+          correctAnswer: "אתונה"
+        },
+        {
+          question: "מהי עיר הבירה של אוסטריה?",
+          options: ["ברן", "וינה", "ציריך", "מינכן"],
+          correctAnswer: "וינה"
+        },
+        {
+          question: "מהי עיר הבירה של צ'כיה?",
+          options: ["ברטיסלבה", "ורשה", "בודפשט", "פראג"],
+          correctAnswer: "פראג"
+        },
+        {
+          question: "מהי עיר הבירה של נורבגיה?",
+          options: ["קופנהגן", "סטוקהולם", "אוסלו", "הלסינקי"],
+          correctAnswer: "אוסלו"
         }
       ]
     },
@@ -152,7 +152,7 @@ function App() {
           correctAnswer: "קנדה"
         },
         {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇿🇦",
+          question: "לאיזו מדינה שייך הדגל ה��ה? 🇿🇦",
           options: ["קניה", "ניגריה", "דרום אפריקה", "אתיופיה"],
           correctAnswer: "דרום אפריקה"
         },
@@ -180,7 +180,7 @@ function App() {
       2: [
         {
           question: "לאיזו מדינה שייך הדגל הזה? 🇯🇵",
-          options: ["סין", "יפן", "וייטנאם", "קוריאה"],
+          options: ["סין", "יפן", "וייטנ��ם", "קוריאה"],
           correctAnswer: "יפן"
         },
         {
