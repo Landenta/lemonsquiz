@@ -89,7 +89,7 @@ function App() {
         },
         {
           question: "מהי עיר הבירה של דנמרק?",
-          options: ["סטוקהולם", "קופנהגן", "אוסלו", "הלסינקי"],
+          options: ["סטוקהולם", "קופנהגן", "אוסלו", "הלסי��קי"],
           correctAnswer: "קופנהגן"
         },
         {
@@ -152,7 +152,7 @@ function App() {
           correctAnswer: "קנדה"
         },
         {
-          question: "לאיזו מדינה שייך הדגל ה��ה? 🇿🇦",
+          question: "לאיזו מדינה שייך הדגל הזה? 🇿🇦",
           options: ["קניה", "ניגריה", "דרום אפריקה", "אתיופיה"],
           correctAnswer: "דרום אפריקה"
         },
@@ -180,7 +180,7 @@ function App() {
       2: [
         {
           question: "לאיזו מדינה שייך הדגל הזה? 🇯🇵",
-          options: ["סין", "יפן", "וייטנ��ם", "קוריאה"],
+          options: ["סין", "יפן", "וייטנאם", "קוריאה"],
           correctAnswer: "יפן"
         },
         {
@@ -209,7 +209,7 @@ function App() {
           correctAnswer: "דרום אפריקה"
         },
         {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇸🇪",
+          question: "��איזו מדינה שייך הדגל הזה? 🇸🇪",
           options: ["נורבגיה", "פינלנד", "דנמרק", "שבדיה"],
           correctAnswer: "שבדיה"
         },
@@ -436,7 +436,7 @@ function App() {
           correctAnswer: "רופיה"
         },
         {
-          question: "מהו המטבע של ערב הסעודית?",
+          question: "מה�� המטבע של ערב הסעודית?",
           options: ["דינר", "דירהם", "ריאל סעודי", "לירה"],
           correctAnswer: "ריאל סעודי"
         }
@@ -535,7 +535,7 @@ function App() {
               className="start-button"
               onClick={() => setGameState('topics')}
             >
-              התחל משחק
+              מדינות🌍
             </button>
           </div>
         );
@@ -566,7 +566,19 @@ function App() {
             <div className="quiz-header">
               <div className="level-indicator">רמה {currentLevel}</div>
               <div className="question-counter">שאלה {currentQuestion + 1} מתוך {questions.length}</div>
-              <div className="score">ניקוד: {score}</div>
+              <button 
+                className="exit-button"
+                onClick={() => {
+                  setGameState('topics');
+                  setCurrentLevel(1);
+                  setCurrentQuestion(0);
+                  setScore(0);
+                  setSelectedAnswer(null);
+                  setIsChecking(false);
+                }}
+              >
+                יציאה
+              </button>
             </div>
             <h2>{questions[currentQuestion].question}</h2>
             <div className="options-grid">
