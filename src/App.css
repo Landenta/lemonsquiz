@@ -261,3 +261,28 @@ h2 {
 .exit-button:hover {
   background-color: #d32f2f;
 }
+
+.professions-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.professions-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+}
+
+.intro-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
