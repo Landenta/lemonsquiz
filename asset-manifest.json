@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lemonsquiz/static/css/main.cafcf891.css",
+    "main.js": "/lemonsquiz/static/js/main.705fa568.js",
+    "static/js/156.9ff22aa1.chunk.js": "/lemonsquiz/static/js/156.9ff22aa1.chunk.js",
+    "index.html": "/lemonsquiz/index.html",
+    "main.cafcf891.css.map": "/lemonsquiz/static/css/main.cafcf891.css.map",
+    "main.705fa568.js.map": "/lemonsquiz/static/js/main.705fa568.js.map",
+    "156.9ff22aa1.chunk.js.map": "/lemonsquiz/static/js/156.9ff22aa1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cafcf891.css",
+    "static/js/main.705fa568.js"
+  ]
+}
