@@ -359,7 +359,7 @@ function App() {
           correctAnswer: "אירו"
         },
         {
-          question: "מהו המטב�� של סין?",
+          question: "מהו המטבע של סין?",
           options: ["ין", "וון", "יואן", "רופי"],
           correctAnswer: "יואן"
         },
@@ -426,7 +426,7 @@ function App() {
           correctAnswer: "ראנד"
         },
         {
-          question: "מהו המטבע של נו��בגיה?",
+          question: "מהו המטבע של נורבגיה?",
           options: ["אירו", "קרונה", "כתר נורבגי", "כתר שבדי"],
           correctAnswer: "כתר נורבגי"
         },
