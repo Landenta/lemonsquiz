@@ -11,7 +11,7 @@ function App() {
   const [currentLevel, setCurrentLevel] = useState(1);
 
   const topics = [
-    { id: 1, name: 'בירות עולם', icon: '🏛️' },
+    { id: 1, name: 'בירות עולם', icon: '🏙️' },
     { id: 2, name: 'דגלים', icon: '🎌' },
     { id: 3, name: 'מאכלים לאומיים', icon: '🍽️' },
     { id: 4, name: 'מטבעות של מדינות', icon: '💰' }
@@ -119,7 +119,7 @@ function App() {
         },
         {
           question: "מהי עיר הבירה של נורבגיה?",
-          options: ["קופנהגן", "סטוקהו��ם", "אוסלו", "הלסינקי"],
+          options: ["קופנהגן", "סטוקהום", "אוסלו", "הלסינקי"],
           correctAnswer: "אוסלו"
         }
       ]
@@ -152,7 +152,7 @@ function App() {
           correctAnswer: "קנדה"
         },
         {
-          question: "לאיזו מדינ�� שייך הדגל הזה? 🇿🇦",
+          question: "לאיזו מדינה שייך הדגל הזה? 🇿🇦",
           options: ["קניה", "ניגריה", "דרום אפריקה", "אתיופיה"],
           correctAnswer: "דרום אפריקה"
         },
