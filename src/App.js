@@ -260,7 +260,7 @@ function App() {
         {
           question: "איזה מאכל מזוהה עם הודו?",
           options: ["סושי", "פיצה", "קארי", "המבורגר"],
-          correctAnswer: "ק��רי"
+          correctAnswer: "קארי"
         },
         {
           question: "איזה מאכל מזוהה עם גרמניה?",
