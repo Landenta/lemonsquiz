@@ -158,8 +158,8 @@ function App() {
         },
         {
           question: "לאיזו מדינה שייך הדגל הזה? 🇸🇪",
-          options: ["נורבגיה", "פינלנד", "דנמרק", "שבדיה"],
-          correctAnswer: "שבדיה"
+          options: ["נורבגיה", "פינלנד", "דנמרק", "שוודיה"],
+          correctAnswer: "שוודיה"
         },
         {
           question: "לאיזו מדינה שייך הדגל הזה? 🇦🇺",
@@ -184,9 +184,9 @@ function App() {
           correctAnswer: "הולנד"
         },
         {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇰🇷",
-          options: ["יפן", "דרום קוריאה", "טייוואן", "וייטנאם"],
-          correctAnswer: "דרום קוריאה"
+          question: "לאיזו מדינה שייך הדגל הזה? 🇮🇷",
+          options: ["יפן", "אירן", "טייוואן", "וייטנאם"],
+          correctAnswer: "אירן"
         },
         {
           question: "לאיזו מדינה שייך הדגל הזה? 🇲🇽",
@@ -194,9 +194,9 @@ function App() {
           correctAnswer: "מקסיקו"
         },
         {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇦🇺",
-          options: ["ניו זילנד", "אוסטרליה", "פיג'י", "טונגה"],
-          correctAnswer: "אוסטרליה"
+          question: "לאיזו מדינה שייך הדגל הזה? 🇵🇸",
+          options: ["ניו זילנד", "כלום", "פיג'י", "טונגה"],
+          correctAnswer: "כלום"
         },
         {
           question: "לאיזו מדינה שייך הדגל הזה? 🇪🇬",
@@ -391,9 +391,9 @@ function App() {
       ],
       2: [
         {
-          question: "מהו המטבע של שבדיה?",
-          options: ["אירו", "כתר שבדי", "קרונה", "פאונד"],
-          correctAnswer: "כתר שבדי"
+          question: "מהו המטבע של שוודיה?",
+          options: ["אירו", "כתר שוודי", "קרונה", "פאונד"],
+          correctAnswer: "כתר שוודי"
         },
         {
           question: "מהו המטבע של ברזיל?",
