@@ -254,28 +254,28 @@ function App() {
         },
         {
           question: "איזה מאכל מזוהה עם יוון?",
-          options: ["פלאפל", "סושי", "מוסקה", "פיצה"],
+          options: ["פלאפל", "חשמל יווני", "מוסקה", "פיצה"],
           correctAnswer: "מוסקה"
         },
         {
           question: "איזה מאכל מזוהה עם הודו?",
-          options: ["סושי", "פיצה", "קארי", "המבורגר"],
+          options: ["סושי", "פיצה", "קארי", "פאייה"],
           correctAnswer: "קארי"
         },
         {
           question: "איזה מאכל מזוהה עם גרמניה?",
-          options: ["שניצל", "פיצה", "סושי", "טאקוס"],
+          options: ["שניצל", "דג סלמון", "סושי", "טאקוס"],
           correctAnswer: "שניצל"
         },
         {
           question: "איזה מאכל מזוהה עם ספרד?",
-          options: ["פאייה", "פיצה", "סושי", "קרואסון"],
+          options: ["פאייה", "פיצה", "פאד תאי", "קרואסון"],
           correctAnswer: "פאייה"
         },
         {
           question: "איזה מאכל מזוהה עם תאילנד?",
-          options: ["פאד תאי", "סושי", "פיצה", "קארי"],
-          correctAnswer: "פאד תאי"
+          options: ["בננה לוטי", "סושי", "פיצה", "קארי"],
+          correctAnswer: "בננה לוטי"
         },
         {
           question: "איזה מאכל מזוהה עם ארצות הברית?",
@@ -301,7 +301,7 @@ function App() {
         },
         {
           question: "איזה מאכל מזוהה עם שוודיה?",
-          options: ["קוטבולר", "שניצל", "המבורגר", "פיצה"],
+          options: ["קוטבולר", "שניצל", "פוז׳יקה", "פיצה"],
           correctAnswer: "קוטבולר"
         },
         {
@@ -530,7 +530,7 @@ function App() {
       case 'welcome':
         return (
           <div className="quiz-container">
-            <p>בחר נושא לשאלון</p>
+            <p>בחר קטגוריה</p>
             <button 
               className="start-button"
               onClick={() => setGameState('topics')}
