@@ -10,7 +10,6 @@ function App() {
   const [isChecking, setIsChecking] = useState(false);
   const [currentTopic, setCurrentTopic] = useState(null);
   const [currentLevel, setCurrentLevel] = useState(1);
-  const [historySubTopic, setHistorySubTopic] = useState(null);
 
   const handleTopicSelection = (topicId) => {
     setCurrentTopic(
@@ -34,7 +33,6 @@ function App() {
     setGameState('quiz');
     setCurrentQuestion(0);
     setScore(0);
-    setHistorySubTopic(topicId);
   };
 
   const handleLevelComplete = () => {
@@ -242,6 +240,19 @@ function App() {
 
       case 'finished':
         return handleLevelComplete();
+        
+      default:
+        return (
+          <div className="quiz-container">
+            <p>מצב לא ידוע</p>
+            <button 
+              className="back-button"
+              onClick={() => setGameState('welcome')}
+            >
+              חזרה למסך הראשי
+            </button>
+          </div>
+        );
     }
   };
 
