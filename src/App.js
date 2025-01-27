@@ -12,24 +12,24 @@ function App() {
   const [currentLevel, setCurrentLevel] = useState(1);
 
   const handleTopicSelection = (topicId) => {
-    setCurrentTopic(
-      topicId === 1 ? 'capitals' :
-      topicId === 2 ? 'flags' :
-      topicId === 3 ? 'foods' :
-      topicId === 4 ? 'currencies' : null
-    );
+    const topic = topicId === 1 ? 'capitals' :
+                 topicId === 2 ? 'flags' :
+                 topicId === 3 ? 'foods' :
+                 topicId === 4 ? 'currencies' : null;
+    
+    setCurrentTopic(topic);
     setGameState('quiz');
     setCurrentQuestion(0);
     setScore(0);
   };
 
   const handleHistoryTopicSelection = (topicId) => {
-    setCurrentTopic(
-      topicId === 1 ? 'worldWars' :
-      topicId === 2 ? 'leaders' :
-      topicId === 3 ? 'inventions' :
-      topicId === 4 ? 'events' : null
-    );
+    const topic = topicId === 1 ? 'worldWars' :
+                 topicId === 2 ? 'leaders' :
+                 topicId === 3 ? 'inventions' :
+                 topicId === 4 ? 'events' : null;
+    
+    setCurrentTopic(topic);
     setGameState('quiz');
     setCurrentQuestion(0);
     setScore(0);
@@ -45,12 +45,12 @@ function App() {
             <button 
               className="next-level-button"
               onClick={() => {
-                setCurrentLevel(2);
+                handleLevelChange(2);
                 setCurrentQuestion(0);
                 setScore(0);
                 setSelectedAnswer(null);
                 setIsChecking(false);
-                setGameState('quiz');
+                handleGameStateChange('quiz');
               }}
             >
               המשך לרמה 2
@@ -59,13 +59,13 @@ function App() {
           <button 
             className="topics-button"
             onClick={() => {
-              if (currentTopic === 'worldWars' || currentTopic === 'leaders' || 
-                  currentTopic === 'inventions' || currentTopic === 'events') {
-                setGameState('historyTopics');
-              } else {
-                setGameState('topics');
-              }
-              setCurrentLevel(1);
+              handleGameStateChange(
+                currentTopic === 'worldWars' || currentTopic === 'leaders' || 
+                currentTopic === 'inventions' || currentTopic === 'events' 
+                  ? 'historyTopics' 
+                  : 'topics'
+              );
+              handleLevelChange(1);
               setCurrentQuestion(0);
               setScore(0);
               setSelectedAnswer(null);
@@ -115,6 +115,14 @@ function App() {
         }
       }, 1000);
     }, 500);
+  };
+
+  const handleLevelChange = (level) => {
+    setCurrentLevel(level);
+  };
+
+  const handleGameStateChange = (state) => {
+    setGameState(state);
   };
 
   const renderContent = () => {
@@ -253,24 +261,6 @@ function App() {
             </button>
           </div>
         );
-    }
-  };
-
-  const saveToStorage = (key, value) => {
-    try {
-      localStorage.setItem(key, JSON.stringify(value));
-    } catch (error) {
-      console.warn('Failed to save to localStorage:', error);
-    }
-  };
-
-  const loadFromStorage = (key, defaultValue) => {
-    try {
-      const item = localStorage.getItem(key);
-      return item ? JSON.parse(item) : defaultValue;
-    } catch (error) {
-      console.warn('Failed to load from localStorage:', error);
-      return defaultValue;
     }
   };
 
