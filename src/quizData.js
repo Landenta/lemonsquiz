@@ -161,58 +161,6 @@ export const quizData = {
       ],
       2: [
         {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇯🇵",
-          options: ["סין", "יפן", "וייטנאם", "קוריאה"],
-          correctAnswer: "יפן"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇮🇹",
-          options: ["ספרד", "צרפת", "איטליה", "יוון"],
-          correctAnswer: "איטליה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇧🇷",
-          options: ["ארצנטינה", "ברזיל", "קולומביה", "צ'ילה"],
-          correctAnswer: "ברזיל"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇬🇧",
-          options: ["בריטניה", "אוסטרליה", "ניו זילנד", "קנדה"],
-          correctAnswer: "בריטניה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇨🇦",
-          options: ["קנדה", "ארה״ב", "מקסיקו", "אלסקה"],
-          correctAnswer: "קנדה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇿🇦",
-          options: ["קניה", "ניגריה", "דרום אפריקה", "אתיופיה"],
-          correctAnswer: "דרום אפריקה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇸🇪",
-          options: ["נורבגיה", "פינלנד", "דנמרק", "שבדיה"],
-          correctAnswer: "שבדיה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇦🇺",
-          options: ["ניו זילנד", "אוסטרליה", "פיג'י", "פפואה גינאה החדשה"],
-          correctAnswer: "אוסטרליה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇩🇪",
-          options: ["בלגיה", "גרמניה", "הולנד", "לוקסמבורג"],
-          correctAnswer: "גרמניה"
-        },
-        {
-          question: "לאיזו מדינה שייך הדגל הזה? 🇰🇷",
-          options: ["צפון קוריאה", "דרום קוריאה", "יפן", "טייוואן"],
-          correctAnswer: "דרום קוריאה"
-        }
-      ],
-      3: [
-        {
           question: "לאיזו מדינה שייך הדגל הזה? 🇱🇻",
           options: ["לטביה", "אסטוניה", "ליטא", "בלארוס"],
           correctAnswer: "לטביה"
